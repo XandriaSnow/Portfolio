@@ -1,0 +1,2293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1129;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: rgba(192, 192, 192, 0.068);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: fixed;
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 100px;
+  z-index: 1;
+}
+header #logo {
+  width: 50px;
+  height: 50px;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+header li {
+  font-size: 20px;
+}
+header #Menu {
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.8s;
+  border-radius: 14px;
+  padding: 6px 20px;
+}
+header #Menu:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .socials {
+  display: flex;
+  align-items: center;
+}
+header .socials #instagram {
+  width: 45px;
+  aspect-ratio: 1/1;
+}
+header .socials #linkedln {
+  width: 70px;
+  height: 60px;
+}
+header .socials #github {
+  width: 70px;
+  height: 75px;
+}
+
+main {
+  width: 100%;
+  height: 90%;
+  padding-left: 40px;
+  padding-top: 50px;
+}
+main .welcome {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  top: 40px;
+}
+main .welcome #Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .welcome #Home h1 {
+  font-size: 96px;
+  color: #6c56ef;
+}
+main .welcome #Home p {
+  width: 300px;
+  color: white;
+  font-size: 24px;
+}
+main .welcome .line {
+  width: 1px;
+  height: 320px;
+  background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+}
+main .skills {
+  width: 750px;
+  height: 280px;
+  background-color: rgba(18, 15, 24, 0.7607843137);
+  border-radius: 40px;
+  margin: 80px 30px 0 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+main .skills h2 {
+  position: relative;
+  left: 290px;
+  font-size: 44px;
+  color: white;
+}
+main .skills .line {
+  width: 1px;
+  height: 170px;
+  position: relative;
+  top: 60px;
+  background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+}
+main .skills #skill-line {
+  position: relative;
+  left: -90px;
+}
+main .skills .skills-list {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  position: relative;
+  left: -55px;
+}
+main .skills .skills-list .web-list h3 {
+  color: #6c56ef;
+  font-size: 26px;
+}
+main .skills .skills-list .web-list ul {
+  color: white;
+  font-weight: 600;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+main .skills .skills-list .UI-list {
+  position: relative;
+  top: -23px;
+}
+main .skills .skills-list .UI-list h3 {
+  color: #6c56ef;
+  font-size: 26px;
+}
+main .skills .skills-list .UI-list ul {
+  color: white;
+  font-weight: 600;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+main .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  left: -110px;
+  top: 40px;
+}
+main .projects h1 {
+  font-size: 50px;
+  color: white;
+}
+main .projects #World {
+  font-size: 22px;
+  color: white;
+}
+main .projects .web_project {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #302763;
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  transition: 1s;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .projects .web_project:hover {
+  color: #0e1129;
+  background-color: white;
+}
+main .projects .project_list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+main .projects .project_list .describe1 {
+  width: 350px;
+  height: 450px;
+  background-color: rgba(192, 192, 192, 0.068);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+main .projects .project_list .describe1 img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: 1s;
+  box-shadow: 0 4px 2px -1px rgba(255, 255, 255, 0.199);
+}
+main .projects .project_list .describe1 img:hover {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+main .projects .project_list .describe1 #images {
+  height: 65%;
+}
+main .projects .project_list .describe1 .Space {
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main .projects .project_list .describe1 .Space h2 {
+  color: white;
+  font-size: 34px;
+}
+main .projects .project_list .describe1 .Space p {
+  font-size: 19px;
+  color: white;
+  text-align: center;
+}
+main .projects .project_list .describe1 .Space .source-view {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+main .projects .project_list .describe1 .Space .source-view .source-code {
+  width: 150px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(192, 192, 192, 0.144);
+  text-align: center;
+  border-radius: 30px;
+  padding-top: 5px;
+  transition: 1s;
+}
+main .projects .project_list .describe1 .Space .source-view .source-code:hover {
+  background-color: rgba(53, 45, 73, 0.418);
+}
+main .projects .project_list .describe1 .Space .source-view a {
+  text-decoration: none;
+  color: white;
+}
+main .projects .UI {
+  position: relative;
+  top: 50px;
+}
+main .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  top: 160px;
+  left: 190px;
+}
+main .contact h1 {
+  font-size: 55px;
+  color: white;
+}
+main .contact .names {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+main .contact .names #name {
+  width: 270px;
+  height: 54px;
+  border-radius: 20px;
+  background-color: rgba(192, 192, 192, 0.068);
+  border: 2px solid rgba(128, 128, 128, 0.425);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 9px 25px;
+  color: white;
+  outline: none;
+}
+main .contact .names #name::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.103);
+}
+main .contact .names #name:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.103);
+}
+main .contact .names #name::placeholder {
+  color: rgba(255, 255, 255, 0.103);
+}
+main .contact .names #message {
+  width: 555px;
+  height: 180px;
+  border-radius: 20px;
+  background-color: rgba(192, 192, 192, 0.068);
+  border: 2px solid rgba(128, 128, 128, 0.425);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 9px 25px;
+  outline: none;
+  color: white;
+}
+main .contact .names #message::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.103);
+}
+main .contact .names #message:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.103);
+}
+main .contact .names #message::placeholder {
+  color: rgba(255, 255, 255, 0.103);
+}
+main .contact input[type=submit] {
+  width: 140px;
+  height: 45px;
+  background-color: rgba(61, 65, 95, 0.6117647059);
+  color: #fff;
+  padding-top: 2px;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  left: 200px;
+  transition: 1s;
+}
+main .contact input[type=submit]:hover {
+  background-color: rgba(53, 45, 73, 0.418);
+}
+main .socials {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 180px;
+  left: 970px;
+}
+main .socials #instagram {
+  width: 45px;
+  aspect-ratio: 1/1;
+}
+main .socials #linkedln {
+  width: 70px;
+  height: 60px;
+  position: relative;
+  left: -10px;
+}
+main .socials #github {
+  width: 70px;
+  height: 75px;
+  position: relative;
+  left: -32px;
+}
+main #socials {
+  display: none;
+}
+main .copyright {
+  position: relative;
+  top: 170px;
+  left: 350px;
+}
+main .copyright p {
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  main .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    left: -10px;
+    top: 40px;
+  }
+  main .projects h1 {
+    font-size: 50px;
+    color: white;
+  }
+  main .projects #World {
+    font-size: 22px;
+    color: white;
+  }
+  main .projects .web_project {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #302763;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    transition: 1s;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  main .projects .web_project:hover {
+    color: #0e1129;
+    background-color: white;
+  }
+  main .projects .project_list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .projects .project_list .describe1 {
+    width: 340px;
+    height: 450px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects .project_list .describe1 img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 2s;
+    box-shadow: 0 4px 2px -1px rgba(255, 255, 255, 0.199);
+  }
+  main .projects .project_list .describe1 img:hover {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  main .projects .project_list .describe1 .Space {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 .Space h2 {
+    color: white;
+    font-size: 32px;
+  }
+  main .projects .project_list .describe1 .Space p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+  main .projects .project_list .describe1 .Space .source-view {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code {
+    width: 140px;
+    height: 32px;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: rgba(192, 192, 192, 0.144);
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 5px;
+    transition: 1s;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .projects .project_list .describe1 .Space .source-view a {
+    text-decoration: none;
+    color: white;
+  }
+  main .projects .UI {
+    position: relative;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  header {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 80px;
+  }
+  header #logo {
+    width: 40px;
+    height: 40px;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+  }
+  header li {
+    font-size: 18px;
+  }
+  header #Menu {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+    border-radius: 14px;
+    padding: 6px 20px;
+  }
+  header #Menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .socials {
+    display: flex;
+    align-items: center;
+  }
+  header .socials #instagram {
+    width: 35px;
+    aspect-ratio: 1/1;
+  }
+  header .socials #linkedln {
+    width: 60px;
+    height: 50px;
+  }
+  header .socials #github {
+    width: 60px;
+    height: 65px;
+  }
+  main {
+    width: 100%;
+    height: 90%;
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+  main .welcome {
+    display: flex;
+    gap: 40px;
+  }
+  main .welcome #Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .welcome #Home h1 {
+    font-size: 90px;
+    color: #6c56ef;
+  }
+  main .welcome #Home p {
+    width: 300px;
+    color: white;
+    font-size: 22px;
+  }
+  main .welcome .line {
+    width: 1px;
+    height: 400px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .welcome img {
+    display: none;
+  }
+  main .skills {
+    width: 750px;
+    height: 280px;
+    background-color: rgba(18, 15, 24, 0.76);
+    border-radius: 40px;
+    margin: 60px 30px 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  main .skills h2 {
+    position: relative;
+    left: 290px;
+    font-size: 44px;
+    color: white;
+  }
+  main .skills .line {
+    width: 1px;
+    height: 170px;
+    position: relative;
+    top: 60px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .skills #skill-line {
+    position: relative;
+    left: -90px;
+  }
+  main .skills .skills-list {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    position: relative;
+    left: -55px;
+  }
+  main .skills .skills-list .web-list h3 {
+    color: #6c56ef;
+    font-size: 26px;
+  }
+  main .skills .skills-list .web-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  main .skills .skills-list .UI-list {
+    position: relative;
+    top: -23px;
+  }
+  main .skills .skills-list .UI-list h3 {
+    color: #6c56ef;
+    font-size: 26px;
+  }
+  main .skills .skills-list .UI-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  main .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    left: -40px;
+    top: 40px;
+  }
+  main .projects h1 {
+    font-size: 40px;
+    color: white;
+  }
+  main .projects #World {
+    font-size: 19px;
+    color: white;
+  }
+  main .projects .web_project {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #302763;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    transition: 1s;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  main .projects .web_project:hover {
+    color: #0e1129;
+    background-color: white;
+  }
+  main .projects .project_list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .projects .project_list .describe1 {
+    width: 310px;
+    height: 400px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects .project_list .describe1 img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 2s;
+    box-shadow: 0 4px 2px -1px rgba(255, 255, 255, 0.199);
+  }
+  main .projects .project_list .describe1 img:hover {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  main .projects .project_list .describe1 .Space {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 .Space h2 {
+    color: white;
+    font-size: 31px;
+  }
+  main .projects .project_list .describe1 .Space p {
+    font-size: 17px;
+    color: white;
+    text-align: center;
+  }
+  main .projects .project_list .describe1 .Space .source-view {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code {
+    width: 130px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(192, 192, 192, 0.144);
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 5px;
+    transition: 1s;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .projects .project_list .describe1 .Space .source-view a {
+    text-decoration: none;
+    color: white;
+  }
+  main .projects .UI {
+    position: relative;
+    top: 50px;
+  }
+  main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 160px;
+    left: 170px;
+  }
+  main .contact h1 {
+    font-size: 55px;
+    color: white;
+  }
+  main .contact .names {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  main .contact .names #name {
+    width: 240px;
+    height: 48px;
+    border-radius: 14px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 25px;
+    color: white;
+    outline: none;
+  }
+  main .contact .names #name::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message {
+    width: 489px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 25px;
+    outline: none;
+    color: white;
+  }
+  main .contact .names #message::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact input[type=submit] {
+    width: 130px;
+    height: 40px;
+    background-color: rgba(61, 65, 95, 0.6117647059);
+    color: #fff;
+    padding-top: 2px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 178px;
+    transition: 1s;
+  }
+  main .contact input[type=submit]:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .copyright {
+    position: relative;
+    top: 170px;
+    left: 300px;
+  }
+  main .copyright p {
+    color: white;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 60px;
+  }
+  header #logo {
+    width: 40px;
+    height: 40px;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 6px;
+  }
+  header li {
+    font-size: 17px;
+  }
+  header #Menu {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+    border-radius: 14px;
+    padding: 6px 20px;
+  }
+  header #Menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .socials {
+    display: flex;
+    align-items: center;
+  }
+  header .socials #instagram {
+    width: 30px;
+    aspect-ratio: 1/1;
+  }
+  header .socials #linkedln {
+    width: 55px;
+    height: 48px;
+  }
+  header .socials #github {
+    width: 55px;
+    height: 60px;
+  }
+  main {
+    width: 100%;
+    height: 90%;
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+  main .welcome {
+    display: flex;
+    gap: 40px;
+  }
+  main .welcome #Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .welcome #Home h1 {
+    font-size: 90px;
+    color: #6c56ef;
+  }
+  main .welcome #Home p {
+    width: 300px;
+    color: white;
+    font-size: 22px;
+  }
+  main .welcome .line {
+    width: 1px;
+    height: 400px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .welcome img {
+    display: none;
+  }
+  main .skills {
+    width: 650px;
+    height: 250px;
+    background-color: rgba(18, 15, 24, 0.76);
+    border-radius: 40px;
+    margin: 60px 30px 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  main .skills h2 {
+    position: relative;
+    left: 270px;
+    font-size: 40px;
+    color: white;
+  }
+  main .skills .line {
+    width: 1px;
+    height: 140px;
+    position: relative;
+    top: 50px;
+    left: -30px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .skills #skill-line {
+    position: relative;
+    left: -70px;
+  }
+  main .skills .skills-list {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    position: relative;
+    left: -55px;
+  }
+  main .skills .skills-list .web-list h3 {
+    color: #6c56ef;
+    font-size: 23px;
+  }
+  main .skills .skills-list .web-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+  }
+  main .skills .skills-list .UI-list {
+    position: relative;
+    top: -23px;
+  }
+  main .skills .skills-list .UI-list h3 {
+    color: #6c56ef;
+    font-size: 23px;
+  }
+  main .skills .skills-list .UI-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+  }
+  main .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    left: -40px;
+    top: 40px;
+  }
+  main .projects h1 {
+    font-size: 40px;
+    color: white;
+  }
+  main .projects #World {
+    font-size: 19px;
+    color: white;
+  }
+  main .projects .web_project {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #302763;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    transition: 1s;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  main .projects .web_project:hover {
+    color: #0e1129;
+    background-color: white;
+  }
+  main .projects .project_list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .projects .project_list .describe1 {
+    width: 270px;
+    height: 350px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects .project_list .describe1 img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 2s;
+    box-shadow: 0 4px 2px -1px rgba(255, 255, 255, 0.199);
+  }
+  main .projects .project_list .describe1 img:hover {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  main .projects .project_list .describe1 .Space {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  main .projects .project_list .describe1 .Space h2 {
+    color: white;
+    font-size: 29px;
+  }
+  main .projects .project_list .describe1 .Space p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+  }
+  main .projects .project_list .describe1 .Space .source-view {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code {
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(192, 192, 192, 0.144);
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 5px;
+    transition: 1s;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .projects .project_list .describe1 .Space .source-view a {
+    text-decoration: none;
+    color: white;
+  }
+  main .projects .UI {
+    position: relative;
+    top: 50px;
+  }
+  main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 160px;
+    left: 130px;
+  }
+  main .contact h1 {
+    font-size: 51px;
+    color: white;
+  }
+  main .contact .names {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  main .contact .names #name {
+    width: 220px;
+    height: 48px;
+    border-radius: 14px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 25px;
+    color: white;
+    outline: none;
+  }
+  main .contact .names #name::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message {
+    width: 452px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 25px;
+    outline: none;
+    color: white;
+  }
+  main .contact .names #message::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact input[type=submit] {
+    width: 120px;
+    height: 40px;
+    background-color: rgba(61, 65, 95, 0.6117647059);
+    color: #fff;
+    padding-top: 2px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 161px;
+    transition: 1s;
+  }
+  main .contact input[type=submit]:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .copyright {
+    position: relative;
+    top: 170px;
+    left: 240px;
+  }
+  main .copyright p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 878px) {
+  main .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    left: -30px;
+    top: 40px;
+  }
+  main .projects h1 {
+    font-size: 50px;
+    color: white;
+  }
+  main .projects #World {
+    font-size: 22px;
+    color: white;
+  }
+  main .projects .web_project {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #302763;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    transition: 1s;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  main .projects .web_project:hover {
+    color: #0e1129;
+    background-color: white;
+  }
+  main .projects .project_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 {
+    width: 450px;
+    height: 550px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects .project_list .describe1 img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 2s;
+    box-shadow: 0 4px 2px -1px rgba(255, 255, 255, 0.199);
+  }
+  main .projects .project_list .describe1 img:hover {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  main .projects .project_list .describe1 .Space {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 .Space h2 {
+    color: white;
+    font-size: 37px;
+  }
+  main .projects .project_list .describe1 .Space p {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+  }
+  main .projects .project_list .describe1 .Space .source-view {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code {
+    width: 160px;
+    height: 45px;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: rgba(192, 192, 192, 0.144);
+    text-align: center;
+    border-radius: 40px;
+    padding-top: 5px;
+    transition: 1s;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .projects .project_list .describe1 .Space .source-view a {
+    text-decoration: none;
+    color: white;
+  }
+  main .projects .UI {
+    position: relative;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 776px) {
+  header {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 60px;
+  }
+  header #logo {
+    width: 40px;
+    height: 40px;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+  }
+  header li {
+    font-size: 17px;
+  }
+  header #Menu {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+    border-radius: 14px;
+    padding: 6px 13px;
+  }
+  header #Menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .socials {
+    display: flex;
+    align-items: center;
+  }
+  header .socials #instagram {
+    width: 30px;
+    aspect-ratio: 1/1;
+  }
+  header .socials #linkedln {
+    width: 55px;
+    height: 48px;
+  }
+  header .socials #github {
+    width: 50px;
+    height: 55px;
+  }
+  main {
+    width: 100%;
+    height: 90%;
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+  main .welcome {
+    display: flex;
+    gap: 40px;
+  }
+  main .welcome #Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .welcome #Home h1 {
+    font-size: 90px;
+    color: #6c56ef;
+  }
+  main .welcome #Home p {
+    width: 300px;
+    color: white;
+    font-size: 22px;
+  }
+  main .welcome .line {
+    width: 1px;
+    height: 400px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .welcome img {
+    display: none;
+  }
+  main .skills {
+    width: 600px;
+    height: 250px;
+    background-color: rgba(18, 15, 24, 0.76);
+    border-radius: 40px;
+    margin: 50px 30px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  main .skills h2 {
+    position: relative;
+    left: 260px;
+    font-size: 40px;
+    color: white;
+  }
+  main .skills .line {
+    width: 1px;
+    height: 140px;
+    position: relative;
+    top: 50px;
+    left: -30px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .skills #skill-line {
+    position: relative;
+    left: -70px;
+  }
+  main .skills .skills-list {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    position: relative;
+    left: -55px;
+  }
+  main .skills .skills-list .web-list h3 {
+    color: #6c56ef;
+    font-size: 23px;
+  }
+  main .skills .skills-list .web-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+  }
+  main .skills .skills-list .UI-list {
+    position: relative;
+    top: -23px;
+  }
+  main .skills .skills-list .UI-list h3 {
+    color: #6c56ef;
+    font-size: 23px;
+  }
+  main .skills .skills-list .UI-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+  }
+  main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 160px;
+    left: -30px;
+  }
+  main .contact h1 {
+    font-size: 51px;
+    color: white;
+  }
+  main .contact .names {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  main .contact .names #name {
+    width: 220px;
+    height: 48px;
+    border-radius: 14px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 25px;
+    color: white;
+    outline: none;
+  }
+  main .contact .names #name::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message {
+    width: 452px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 25px;
+    outline: none;
+    color: white;
+  }
+  main .contact .names #message::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact input[type=submit] {
+    width: 120px;
+    height: 40px;
+    background-color: rgba(61, 65, 95, 0.6117647059);
+    color: #fff;
+    padding-top: 2px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 161px;
+    transition: 1s;
+  }
+  main .contact input[type=submit]:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .copyright {
+    position: relative;
+    top: 170px;
+    left: 80px;
+  }
+  main .copyright p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 686px) {
+  header {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 42px;
+  }
+  header #logo {
+    width: 36px;
+    height: 36px;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+  }
+  header li {
+    font-size: 16px;
+  }
+  header #Menu {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+    border-radius: 14px;
+    padding: 4px 8px;
+  }
+  header #Menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .socials {
+    display: flex;
+    align-items: center;
+  }
+  header .socials #instagram {
+    width: 28px;
+    aspect-ratio: 1/1;
+  }
+  header .socials #linkedln {
+    width: 46px;
+    height: 41px;
+    position: relative;
+    left: -5px;
+  }
+  header .socials #github {
+    width: 40px;
+    height: 45px;
+    position: relative;
+    left: -17px;
+  }
+  main {
+    width: 100%;
+    height: 90%;
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+  main .welcome {
+    display: flex;
+    gap: 40px;
+  }
+  main .welcome #Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .welcome #Home h1 {
+    font-size: 90px;
+    color: #6c56ef;
+  }
+  main .welcome #Home p {
+    width: 300px;
+    color: white;
+    font-size: 22px;
+  }
+  main .welcome .line {
+    width: 1px;
+    height: 400px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .welcome img {
+    display: none;
+  }
+  main .skills {
+    width: 360px;
+    height: 340px;
+    background-color: rgba(18, 15, 24, 0.76);
+    border-radius: 40px;
+    margin: 0 0 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    position: relative;
+    top: -100px;
+  }
+  main .skills h2 {
+    position: relative;
+    left: 97px;
+    font-size: 37px;
+    color: white;
+  }
+  main .skills .line {
+    width: 1px;
+    height: 190px;
+    position: relative;
+    top: 60px;
+    left: -30px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .skills #skill-line {
+    position: relative;
+    left: -60px;
+  }
+  main .skills .skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: 60px;
+  }
+  main .skills .skills-list .web-list h3 {
+    color: #6c56ef;
+    font-size: 25px;
+  }
+  main .skills .skills-list .web-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+  }
+  main .skills .skills-list .UI-list {
+    position: relative;
+    top: -156px;
+  }
+  main .skills .skills-list .UI-list h3 {
+    color: #6c56ef;
+    font-size: 25px;
+  }
+  main .skills .skills-list .UI-list ul {
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+  }
+  main .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    left: -30px;
+    top: 40px;
+  }
+  main .projects h1 {
+    font-size: 50px;
+    color: white;
+  }
+  main .projects #World {
+    font-size: 22px;
+    color: white;
+  }
+  main .projects .web_project {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #302763;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    transition: 1s;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  main .projects .web_project:hover {
+    color: #0e1129;
+    background-color: white;
+  }
+  main .projects .project_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 {
+    width: 410px;
+    height: 530px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects .project_list .describe1 img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 2s;
+    box-shadow: 0 4px 2px -1px rgba(255, 255, 255, 0.199);
+  }
+  main .projects .project_list .describe1 img:hover {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  main .projects .project_list .describe1 .Space {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 .Space h2 {
+    color: white;
+    font-size: 35px;
+  }
+  main .projects .project_list .describe1 .Space p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  main .projects .project_list .describe1 .Space .source-view {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code {
+    width: 150px;
+    height: 40px;
+    font-size: 21px;
+    font-weight: 600;
+    background-color: rgba(192, 192, 192, 0.144);
+    text-align: center;
+    border-radius: 40px;
+    padding-top: 5px;
+    transition: 1s;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .projects .project_list .describe1 .Space .source-view a {
+    text-decoration: none;
+    color: white;
+  }
+  main .projects .UI {
+    position: relative;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 577px) {
+  header {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+  }
+  header #logo {
+    width: 32px;
+    height: 32px;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+  }
+  header li {
+    font-size: 15px;
+  }
+  header #Menu {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+    border-radius: 14px;
+    padding: 3px 6px;
+  }
+  header #Menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .socials {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -8px;
+  }
+  header .socials #instagram {
+    width: 28px;
+    aspect-ratio: 1/1;
+  }
+  header .socials #linkedln {
+    width: 46px;
+    height: 41px;
+    position: relative;
+    left: -5px;
+  }
+  header .socials #github {
+    width: 40px;
+    height: 45px;
+    position: relative;
+    left: -17px;
+  }
+}
+@media screen and (max-width: 507px) {
+  header {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+  }
+  header #logo {
+    width: 32px;
+    height: 32px;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+  }
+  header li {
+    font-size: 15px;
+  }
+  header #Menu {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+    border-radius: 14px;
+    padding: 3px 6px;
+  }
+  header #Menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .socials {
+    display: none;
+  }
+  header .socials #instagram {
+    width: 28px;
+    aspect-ratio: 1/1;
+  }
+  header .socials #linkedln {
+    width: 46px;
+    height: 41px;
+    position: relative;
+    left: -5px;
+  }
+  header .socials #github {
+    width: 40px;
+    height: 45px;
+    position: relative;
+    left: -17px;
+  }
+  main .socials {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 170px;
+    left: 317px;
+  }
+  main .socials #instagram {
+    width: 35px;
+    aspect-ratio: 1/1;
+  }
+  main .socials #linkedln {
+    width: 60px;
+    height: 50px;
+    position: relative;
+    left: -16px;
+    top: 7px;
+  }
+  main .socials #github {
+    width: 55px;
+    height: 60px;
+    position: relative;
+    left: -42px;
+    top: 12px;
+  }
+  main #socials {
+    display: block;
+  }
+}
+@media screen and (max-width: 475px) {
+  header {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+  }
+  header #logo {
+    width: 32px;
+    height: 32px;
+  }
+  header ul {
+    list-style-type: none;
+    display: flex;
+  }
+  header li {
+    font-size: 15px;
+  }
+  header #Menu {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 1s;
+    border-radius: 14px;
+    padding: 3px 6px;
+  }
+  header #Menu:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header .socials {
+    display: none;
+  }
+  header .socials #instagram {
+    width: 28px;
+    aspect-ratio: 1/1;
+  }
+  header .socials #linkedln {
+    width: 46px;
+    height: 41px;
+    position: relative;
+    left: -5px;
+  }
+  header .socials #github {
+    width: 40px;
+    height: 45px;
+    position: relative;
+    left: -17px;
+  }
+  main {
+    width: 100%;
+    height: 90%;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  main .welcome {
+    display: flex;
+    gap: 20px;
+  }
+  main .welcome #Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .welcome #Home h1 {
+    font-size: 80px;
+    color: #6c56ef;
+  }
+  main .welcome #Home p {
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  main .welcome .line {
+    width: 1px;
+    height: 300px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .welcome img {
+    display: none;
+  }
+  main .skills {
+    width: 320px;
+    height: 340px;
+    background-color: rgba(18, 15, 24, 0.76);
+    border-radius: 40px;
+    margin: 0 0 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    position: relative;
+    top: -40px;
+    left: -12px;
+  }
+  main .skills h2 {
+    position: relative;
+    left: 94px;
+    font-size: 37px;
+    color: white;
+  }
+  main .skills .line {
+    width: 1px;
+    height: 190px;
+    position: relative;
+    top: 60px;
+    left: -30px;
+    background: linear-gradient(100deg, #08b6f9 0%, #6c56ef 33.57%, #1306dd 65.86%, #aa0eb2 100%);
+  }
+  main .skills #skill-line {
+    position: relative;
+    left: -60px;
+  }
+  main .skills .skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -45px;
+    top: 60px;
+  }
+  main .skills .skills-list .web-list h3 {
+    color: #6c56ef;
+    font-size: 23px;
+  }
+  main .skills .skills-list .web-list ul {
+    color: white;
+    font-weight: 500;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+  }
+  main .skills .skills-list .UI-list {
+    position: relative;
+    top: -156px;
+  }
+  main .skills .skills-list .UI-list h3 {
+    color: #6c56ef;
+    font-size: 23px;
+  }
+  main .skills .skills-list .UI-list ul {
+    color: white;
+    font-weight: 500;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 17px;
+  }
+  main .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    left: -24px;
+    top: 40px;
+  }
+  main .projects h1 {
+    font-size: 50px;
+    color: white;
+  }
+  main .projects #World {
+    font-size: 22px;
+    color: white;
+  }
+  main .projects .web_project {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #302763;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    transition: 1s;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  main .projects .web_project:hover {
+    color: #0e1129;
+    background-color: white;
+  }
+  main .projects .project_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 {
+    width: 350px;
+    height: 450px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .projects .project_list .describe1 img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 2s;
+    box-shadow: 0 4px 2px -1px rgba(255, 255, 255, 0.199);
+  }
+  main .projects .project_list .describe1 img:hover {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  main .projects .project_list .describe1 .Space {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 .Space h2 {
+    color: white;
+    font-size: 34px;
+  }
+  main .projects .project_list .describe1 .Space p {
+    font-size: 19px;
+    color: white;
+    text-align: center;
+  }
+  main .projects .project_list .describe1 .Space .source-view {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(192, 192, 192, 0.144);
+    text-align: center;
+    border-radius: 30px;
+    padding-top: 5px;
+    transition: 1s;
+  }
+  main .projects .project_list .describe1 .Space .source-view .source-code:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .projects .project_list .describe1 .Space .source-view a {
+    text-decoration: none;
+    color: white;
+  }
+  main .projects .UI {
+    position: relative;
+    top: 50px;
+  }
+  main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 160px;
+    left: -30px;
+  }
+  main .contact h1 {
+    font-size: 47px;
+    color: white;
+  }
+  main .contact .names {
+    display: flex;
+    flex-direction: row;
+  }
+  main .contact .names #name {
+    width: 190px;
+    height: 48px;
+    border-radius: 14px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 25px;
+    color: white;
+    outline: none;
+  }
+  main .contact .names #name::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #name::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message {
+    width: 392px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: rgba(192, 192, 192, 0.068);
+    border: 2px solid rgba(128, 128, 128, 0.425);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 9px 25px;
+    outline: none;
+    color: white;
+  }
+  main .contact .names #message::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact .names #message::placeholder {
+    color: rgba(255, 255, 255, 0.103);
+  }
+  main .contact input[type=submit] {
+    width: 120px;
+    height: 40px;
+    background-color: rgba(61, 65, 95, 0.6117647059);
+    color: #fff;
+    padding-top: 2px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 131px;
+    transition: 1s;
+  }
+  main .contact input[type=submit]:hover {
+    background-color: rgba(53, 45, 73, 0.418);
+  }
+  main .socials {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 170px;
+    left: 258px;
+  }
+  main .socials #instagram {
+    width: 35px;
+    aspect-ratio: 1/1;
+  }
+  main .socials #linkedln {
+    width: 60px;
+    height: 50px;
+    position: relative;
+    left: -16px;
+    top: 7px;
+  }
+  main .socials #github {
+    width: 55px;
+    height: 60px;
+    position: relative;
+    left: -42px;
+    top: 12px;
+  }
+  main #socials {
+    display: block;
+  }
+  main .copyright {
+    position: relative;
+    top: 170px;
+    left: 45px;
+  }
+  main .copyright p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=index.css.map */
